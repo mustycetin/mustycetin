@@ -1,12 +1,14 @@
 <div align="center">
 
 # CREACET SOFTWARE
+
+**[Explore the interactive Creacet website ↗](https://mustycetin.github.io/mustycetin/)**
 ### Independent apps. Playful ideas. Useful software.
 
 Mobile games, Android experiences and everyday tools — created with curiosity and care.
 
 [![Support on Patreon](https://img.shields.io/badge/SUPPORT_ON_PATREON-FF424D?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/cw/creacet)
-[![Explore projects](https://img.shields.io/badge/EXPLORE_PROJECTS-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mustycetin?tab=repositories)
+[![Explore projects](https://img.shields.io/badge/EXPLORE_PROJECTS-E8294F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mustycetin?tab=repositories)
 
 **[Projects](#-featured-projects) · [About](#-behind-creacet) · [Support](#-support-independent-development)**
 
