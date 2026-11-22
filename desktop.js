@@ -59,3 +59,42 @@ document.querySelector('#open-bio').addEventListener('click', event => {
   event.preventDefault();
   biography.showModal();
 });
+
+const appWindow = document.querySelector('#product-window');
+const appContent = appWindow.querySelector('.app-content');
+let desktopPosition;
+document.querySelector('.desktop-apps').addEventListener('click', event => {
+  const shortcut = event.target.closest('a');
+  if (!shortcut || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  const title = shortcut.textContent.trim();
+  desktopPosition = { shortcut, y: window.scrollY };
+  appWindow.querySelector('#app-title').textContent = title;
+  const frame = document.createElement('iframe');
+  frame.title = title;
+  frame.allowFullscreen = true;
+  frame.addEventListener('load', () => {
+    const page = frame.contentDocument;
+    if (!page) return;
+    for (const link of page.querySelectorAll('a[href]')) {
+      const url = new URL(link.href);
+      if (url.origin !== location.origin && /^https?:$/.test(url.protocol)) {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      } else if (url.pathname === location.pathname && url.origin === location.origin) {
+        link.addEventListener('click', e => { e.preventDefault(); appWindow.close(); });
+      }
+    }
+    page.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && !page.querySelector('dialog[open]')) appWindow.close();
+    });
+  });
+  frame.src = shortcut.href;
+  appContent.replaceChildren(frame);
+  appWindow.showModal();
+});
+appWindow.addEventListener('close', () => {
+  appContent.replaceChildren();
+  window.scrollTo({top:desktopPosition.y, behavior:'instant'});
+  desktopPosition.shortcut.focus({preventScroll:true});
+});
