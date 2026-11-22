@@ -28,13 +28,14 @@ let x = -60, y = -60, targetX, targetY, frame;
 function follow() {
   x += (targetX - x) * .18;
   y += (targetY - y) * .18;
-  mascot.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+  const tilt = Math.max(-14, Math.min(14, (targetX - x) * .18));
+  mascot.style.transform = 'translate(' + x + 'px,' + y + 'px) rotate(' + tilt + 'deg)';
   frame = Math.abs(targetX-x) + Math.abs(targetY-y) > .7 ? requestAnimationFrame(follow) : 0;
 }
 window.addEventListener('pointermove', event => {
   if (event.pointerType !== 'mouse' || reduced.matches || !matchMedia('(pointer:fine)').matches) return;
-  targetX = Math.min(innerWidth - 30, event.clientX + 18);
-  targetY = Math.min(innerHeight - 28, event.clientY + 18);
+  targetX = Math.min(innerWidth - 46, event.clientX + 18);
+  targetY = Math.min(innerHeight - 46, event.clientY + 18);
   if (!frame) follow();
 }, {passive:true});
 window.addEventListener('pointerdown', event => {
