@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1000 1000">
+  <!-- Generator: Adobe Illustrator 29.8.9, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0 {
+        stroke: #232323;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 90px;
+      }
+
+      .st0, .st1 {
+        fill: none;
+      }
+
+      .st1 {
+        stroke: #464646;
+        stroke-width: 46px;
+      }
+
+      .st2 {
+        fill: #e5162f;
+      }
+    </style>
+  </defs>
+  <path class="st0" d="M725,254h-294.34c-75.72,0-137.1,67.93-137.1,151.72v188.57c0,83.79,61.38,151.72,137.1,151.72h294.34"/>
+  <rect class="st1" x="405" y="365" width="290" height="270" rx="57.5" ry="57.5"/>
+  <rect class="st2" x="495" y="445" width="110" height="110" rx="33" ry="33"/>
+</svg>
