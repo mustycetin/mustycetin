@@ -63,6 +63,19 @@ A simple home screen for Xiaomi TV Box S, with a setup script to make getting st
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🟪 Blocks: Puzzle Game
+**Blast rows, columns & 3x3 boxes.**
+
+A glowing neon 9x9 block puzzle with five modes, smart piece flow and no ads. Coming soon to Google Play.
+
+[Explore Blocks →](https://mustycetin.github.io/mustycetin/blocks/)
+
+</td>
+<td width="50%" valign="top"></td>
+</tr>
 </table>
 
 ## ✦ Behind Creacet
