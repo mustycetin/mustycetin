@@ -26,15 +26,19 @@ dialog{border:1px solid #ffffff30;border-radius:15px;background:#101016;padding:
 @media(min-width:1500px){.stage{height:530px}}@media(max-width:1050px){.portfolio-grid{grid-template-columns:repeat(3,1fr)}.detail-head{grid-template-columns:1fr}.detail-links{justify-content:flex-start;max-width:none}}@media(max-width:800px){.wrap{width:calc(100% - 38px)}nav{height:72px}.links{gap:18px}.links .hide-mobile{display:none}.hero{padding-top:57px}.intro{grid-template-columns:1fr;gap:22px}h1{letter-spacing:-3px;font-size:64px}.hero-copy{max-width:440px}.stage{height:355px;margin-top:5px}.hint{display:none}.stage-top{top:12px}.section{padding:60px 0}.section-title{display:block}.section-title>p{margin-top:18px;max-width:100%}.portfolio{padding:42px 0 56px}.portfolio-grid{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr;gap:28px}.support{padding:30px;display:block}.support h2{font-size:30px}.support .button{margin-top:25px}footer{margin-top:55px;gap:18px;flex-wrap:wrap}.section-title h2,h2{font-size:33px}.stage-controls{bottom:16px}.modes button{padding:7px 13px}.app-detail{padding:58px 0}}@media(max-width:540px){.links>a:first-child{display:none}.portfolio-grid{grid-template-columns:1fr}.portfolio-card{min-height:152px}.detail-title{align-items:flex-start}.detail-title img{width:58px;height:58px}.shot{flex-basis:68vw}.detail-link{width:100%;justify-content:space-between}.home-preview{height:240px}.tv{width:82%;left:9%;height:155px;padding:20px}.tv-row{margin-top:19px}.tv-row i{height:38px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 <link rel="stylesheet" href="studio.css">
+<link rel="stylesheet" href="desktop.css">
 <link rel="icon" href="assets/creacet.svg">
 </head>
 <body>
 <header><nav class="wrap" aria-label="Main menu"><a class="brand" href="#top" aria-label="Creacet Software home"><img class="logo" src="assets/creacet.svg" alt=""><span>creacet<small>SOFTWARE</small></span></a><div class="links"><a href="#projects">Projects</a><a class="hide-mobile" href="#about">About</a><a class="navsupport" href="https://www.patreon.com/cw/creacet" target="_blank" rel="noopener noreferrer">Support ↗</a></div></nav></header>
 <main id="top">
-<section class="studio-window pitch opening" aria-labelledby="studio-title">
+<div class="camera-track"><section class="studio-window pitch opening" aria-labelledby="studio-title">
   <img class="workbench" src="assets/studio-window.webp" alt="" fetchpriority="high" width="1672" height="941">
-  <div class="opening-copy wrap"><p class="label">Independent games &amp; Android apps</p><h1 id="studio-title">Small studio.<br><em>Endless ideas.</em></h1><a class="browse" href="#projects">Explore the collection <span aria-hidden="true">↓</span></a></div>
-</section>
+  <div class="opening-copy wrap"><p class="label">Independent games &amp; Android apps</p><h1 id="studio-title">Small studio.<br><em>Endless ideas.</em></h1><a class="browse" href="#studio-desktop">Enter the computer ↓</a></div>
+  <section class="screen-ui" id="studio-desktop" aria-label="Studio desktop"><div class="crt"><div class="system-bar"><img src="assets/creacet.svg" alt="">Creacet OS <span>Studio desktop</span></div>
+    <div class="desktop-apps"><a href="catstacksort/"><img src="assets/catstacksort/icon.png" alt=""><span>Cat Stack Sort</span></a><a href="astrocut/"><img src="assets/astrocut/icon.png" alt=""><span>AstroCut</span></a><a href="blocks/"><img src="assets/blocks/icon.png" alt=""><span>Blocks</span></a><a href="loop-launcher/"><img src="assets/loop-launcher/icon.png" alt=""><span>Loop Launcher</span></a><a href="loop-home/"><img src="assets/loop-home-icon.png" alt=""><span>Loop Home</span></a></div>
+    <a class="catalog-link" href="#projects">Browse the catalogue ↓</a></div></section>
+</section></div>
 <div id="mascot" aria-hidden="true">
   <svg viewBox="0 0 48 48" focusable="false">
     <path d="m23 13 4-8" fill="none" stroke="#f0bdac" stroke-width="2.5"/>
@@ -64,6 +68,7 @@ dialog{border:1px solid #ffffff30;border-radius:15px;background:#101016;padding:
 <script>
 </script>
 <script src="studio.js" defer></script>
+<script src="desktop.js" defer></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 <script>
