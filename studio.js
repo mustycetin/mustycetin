@@ -14,14 +14,30 @@ for (const product of document.querySelectorAll('.app-detail')) {
     player.allowFullscreen = true;
     reel.classList.remove('poster');
     reel.append(player);
-  } else {
-    const icon = product.querySelector('.detail-title img').cloneNode();
-    icon.alt = '';
-    reel.append(icon);
-  }
+  } else continue; // The portrait screenshot gallery occupies this space until a trailer exists.
   product.querySelector('.shots').prepend(reel);
 }
 const mascot = document.querySelector('#mascot');
+const productLinks = [...document.querySelectorAll('.picker a')];
+function selectProduct(hash) {
+  const active = productLinks.find(link => link.hash === hash);
+  if (!active) return;
+  for (const link of productLinks) {
+    const selected = link === active;
+    document.getElementById(link.hash.slice(1)).hidden = !selected;
+    link.setAttribute('aria-current', String(selected));
+  }
+}
+selectProduct(productLinks.some(link => link.hash === location.hash) ? location.hash : productLinks[0].hash);
+for (const link of productLinks) {
+  link.addEventListener('click', event => {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    history.replaceState(null, '', link.hash);
+    selectProduct(link.hash);
+  });
+}
+window.addEventListener('hashchange', () => selectProduct(location.hash));
 document.querySelector('.pitch').append(mascot);
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 let x = -60, y = -60, targetX, targetY, frame;
