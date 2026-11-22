@@ -22,6 +22,28 @@ Mobile games, Android experiences and everyday tools — created with curiosity 
 <tr>
 <td width="50%" valign="top">
 
+### 🐱 Cat Stack Sort: Color Puzzle
+**Sort stubborn square cats into cozy boxes.**
+
+A color-sorting puzzle with 500 levels in five series. No ads, out now on the App Store; Android is in closed testing.
+
+[Get the game: App Store & Google Play →](https://mustycetin.github.io/mustycetin/catstacksort/)
+
+</td>
+<td width="50%" valign="top">
+
+### ✂ AstroCut: Space Slice Puzzle
+**Slice space, trap the meteors.**
+
+250 hand-made levels across 21 planets with a cheeky astronaut. Coming soon to Google Play.
+
+[Explore AstroCut →](https://mustycetin.github.io/astrocut/)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
 ### ∞ Loop Launcher
 **A home screen without limits.**
 

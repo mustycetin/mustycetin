@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cat Stack Sort: Color Puzzle — Download</title>
+<meta name="description" content="Sort stubborn square cats into cozy boxes. 500 puzzles, five series, no ads. Get it on the App Store or join the Android test on Google Play.">
+<meta name="theme-color" content="#7B3FF2">
+<link rel="icon" href="../assets/catstacksort/icon.png">
+<link rel="apple-touch-icon" href="../assets/catstacksort/icon-512.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cat Stack Sort: Color Puzzle">
+<meta property="og:description" content="Sort stubborn square cats into cozy boxes. 500 puzzles, no ads. iPhone & Android.">
+<meta property="og:url" content="https://mustycetin.github.io/mustycetin/catstacksort/">
+<meta property="og:image" content="https://mustycetin.github.io/mustycetin/assets/catstacksort/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6792870083">
+<style>
+:root{--purple:#7B3FF2;--purple-d:#5622C7;--orange:#FF8A1F;--orange-d:#E86417;--green:#29B56F;--ink:#2E2142;--muted:#766989;--soft:#F1E9FF;--line:#E9E1F5;--bg:#FBF9FF}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 ui-rounded,"SF Pro Rounded","Nunito","Segoe UI",system-ui,sans-serif}
+a{color:inherit}
+.wrap{width:min(980px,calc(100% - 32px));margin:auto}
+.top{display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-size:14px;color:var(--muted)}
+.top a{text-decoration:none}
+.top b{color:var(--ink)}
+.lang{border:1px solid var(--line);background:#fff;border-radius:20px;padding:5px 12px;font:inherit;color:var(--ink);cursor:pointer}
+.cover{display:block;width:100%;height:auto;border-radius:22px;box-shadow:0 18px 40px #3d205a24}
+.head{display:flex;gap:18px;align-items:center;margin:28px 0 8px}
+.head img{width:84px;height:84px;border-radius:20px;box-shadow:0 8px 20px #3d205a30}
+h1{margin:0;font-size:clamp(26px,5vw,38px);line-height:1.1;letter-spacing:-.5px}
+.sub{margin:4px 0 0;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 26px}
+.chips span{background:var(--soft);color:var(--purple-d);border-radius:20px;padding:5px 12px;font-size:13px;font-weight:600}
+.stores{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.store{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:12px}
+.store.mine{border:2px solid var(--purple);box-shadow:0 10px 30px #7b3ff222}
+.store h2{margin:0;font-size:19px;display:flex;align-items:center;gap:10px}
+.store h2 svg{width:24px;height:24px;flex:none}
+.store p{margin:0;color:var(--muted);font-size:14.5px}
+.tag{font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;border-radius:20px;padding:3px 9px;margin-left:auto}
+.tag.live{background:#EAF9F1;color:#168653}.tag.test{background:#FFF1E3;color:var(--orange-d)}
+.btn{display:flex;align-items:center;justify-content:center;text-align:center;gap:10px;text-decoration:none;font-weight:700;border-radius:14px;padding:14px 18px;color:#fff;background:var(--purple);transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px);background:var(--purple-d)}
+.btn.orange{background:var(--orange)}.btn.orange:hover{background:var(--orange-d)}
+.btn.ghost{background:#fff;color:var(--purple-d);border:1.5px solid var(--line)}.btn.ghost:hover{background:var(--soft)}
+ol{margin:0;padding-left:20px;font-size:14.5px;color:var(--muted)}ol li{margin:4px 0}
+.mine-note{font-size:12px;font-weight:700;color:var(--purple);letter-spacing:.5px;text-transform:uppercase}
+.store:not(.mine) .mine-note{display:none}
+h3{font-size:22px;margin:42px 0 12px}
+.about{color:#4b3f5f;max-width:720px}
+.series{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:16px 0}
+.series div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-size:14px}
+.series b{display:block;font-size:15px}
+.series small{color:var(--muted)}
+.shots{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 18px;scroll-snap-type:x mandatory}
+.shots img{flex:0 0 200px;width:200px;height:auto;border-radius:16px;border:1px solid var(--line);scroll-snap-align:start;background:#fff}
+footer{margin:40px 0 30px;padding-top:18px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;font-size:13px;color:var(--muted)}
+footer a{text-decoration:none}footer a:hover{color:var(--purple)}
+@media(max-width:680px){.stores{grid-template-columns:1fr}.head img{width:68px;height:68px}.shots img{flex-basis:44vw;width:44vw}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="../"><b>creacet</b> software</a><button class="lang" id="lang" type="button">Türkçe</button></div>
+  <img class="cover" src="../assets/catstacksort/cover.jpg" width="1600" height="686" alt="Cat Stack Sort: square cats stacked in cardboard boxes">
+  <div class="head">
+    <img src="../assets/catstacksort/icon.png" width="84" height="84" alt="Cat Stack Sort app icon">
+    <div><h1>Cat Stack Sort: Color Puzzle</h1><p class="sub" data-i="sub">Sort stubborn square cats into cozy boxes.</p></div>
+  </div>
+  <div class="chips"><span data-i="c1">500 levels</span><span data-i="c2">5 series</span><span data-i="c3">No ads</span><span data-i="c4">Plays offline</span><span data-i="c5">16 languages</span></div>
+
+  <div class="stores" id="stores">
+    <section class="store" id="ios">
+      <span class="mine-note" data-i="mine">For your device</span>
+      <h2><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.5-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.4z"/></svg>iPhone &amp; iPad<span class="tag live" data-i="live">Available</span></h2>
+      <p data-i="iosP">Free to download. The first 5 levels of every series are free; one purchase unlocks the whole game.</p>
+      <a class="btn" href="https://apps.apple.com/app/id6792870083" target="_blank" rel="noopener" data-i="iosB">Download on the App Store ↗</a>
+    </section>
+    <section class="store" id="android">
+      <span class="mine-note" data-i="mine">For your device</span>
+      <h2><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.6 9.5l1.8-3.1a.4.4 0 0 0-.7-.4l-1.8 3.1A11 11 0 0 0 12 8a11 11 0 0 0-4.9 1.1L5.3 6a.4.4 0 0 0-.7.4l1.8 3.1A10.2 10.2 0 0 0 1.5 17.6h21a10.2 10.2 0 0 0-4.9-8.1zM7 15.1a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm10 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>Android<span class="tag test" data-i="test">Closed test</span></h2>
+      <p data-i="andP">Coming to Google Play. Join the free test now — it takes two minutes:</p>
+      <ol>
+        <li data-i="s1">Join the tester group with the Google account on your phone.</li>
+        <li data-i="s2">Open the test page, tap "Become a tester", then install from Google Play.</li>
+      </ol>
+      <a class="btn orange" href="https://groups.google.com/g/catstacksort-testers" target="_blank" rel="noopener" data-i="b1">1 · Join the tester group ↗</a>
+      <a class="btn ghost" href="https://play.google.com/apps/testing/com.catstacksort.creacet" target="_blank" rel="noopener" data-i="b2">2 · Become a tester on Google Play ↗</a>
+    </section>
+  </div>
+
+  <h3 data-i="h3a">What is it?</h3>
+  <p class="about" data-i="about">Square cats are stubborn: they only want to sit with cats of their own color. Tap a box to pick up the top cats and tap another to drop them in. Fill a box with four matching cats and it closes with a satisfying "MEOW" tape. Every one of the 500 levels is checked by a solver, so every puzzle can be beaten.</p>
+  <div class="series">
+    <div><b>Kitty Business</b><small data-i="e1">Easy · the classic</small></div>
+    <div><b>Double Trouble</b><small data-i="e2">Medium · two-color cats</small></div>
+    <div><b>Nine Lives</b><small data-i="e3">Hard · tighter boards</small></div>
+    <div><b>Side by Side</b><small data-i="e4">Very hard · colors match by side</small></div>
+    <div><b>Down to Their Last Life</b><small data-i="e5">Extreme · in the dark, one life</small></div>
+  </div>
+  <div class="shots">
+    <img src="../assets/catstacksort/en-01-home.jpg" width="540" height="1149" loading="lazy" alt="Home screen with level progress">
+    <img src="../assets/catstacksort/en-02-levels.jpg" width="540" height="1149" loading="lazy" alt="Level selection with the game series">
+    <img src="../assets/catstacksort/en-03-sorting.jpg" width="540" height="1149" loading="lazy" alt="Sorting colorful cats into boxes">
+    <img src="../assets/catstacksort/en-04-nine-lives.jpg" width="540" height="1149" loading="lazy" alt="A puzzle board with undo, extra box and restart">
+    <img src="../assets/catstacksort/en-05-double-trouble.jpg" width="540" height="1149" loading="lazy" alt="Double Trouble two-color cats">
+  </div>
+
+  <footer>
+    <span>© 2026 Creacet Software</span>
+    <span><a href="https://nursaver.cloud/catstacksort/privacy/" target="_blank" rel="noopener" data-i="priv">Privacy policy</a> · <a href="../" data-i="more">More from Creacet</a></span>
+  </footer>
+</div>
+<script>
+(()=>{
+  const ua=navigator.userAgent, ios=/iPhone|iPad|iPod/.test(ua)||(/Macintosh/.test(ua)&&navigator.maxTouchPoints>1), android=/Android/.test(ua);
+  const stores=document.getElementById('stores');
+  if(ios) document.getElementById('ios').classList.add('mine');
+  if(android){const a=document.getElementById('android');a.classList.add('mine');stores.prepend(a);}
+  const tr={sub:"İnatçı kare kedileri rahat kutularına yerleştir.",c1:"500 bölüm",c2:"5 seri",c3:"Reklamsız",c4:"İnternetsiz oynanır",c5:"16 dil",mine:"Cihazın için",live:"Yayında",test:"Kapalı test",
+    iosP:"İndirmesi ücretsiz. Her serinin ilk 5 bölümü bedava; tek bir satın alma tüm oyunu açar.",iosB:"App Store'dan indir ↗",
+    andP:"Google Play'e geliyor. Ücretsiz teste şimdi katıl, iki dakika sürer:",s1:"Telefonundaki Google hesabıyla test grubuna katıl.",s2:"Test sayfasını aç, \"Test kullanıcısı ol\"a bas ve Google Play'den yükle.",
+    b1:"1 · Test grubuna katıl ↗",b2:"2 · Google Play'de test kullanıcısı ol ↗",h3a:"Nasıl bir oyun?",
+    about:"Kare kediler inatçıdır: yalnızca kendi renklerindeki kedilerle oturmak isterler. Bir kutuya dokunup en üstteki kedileri al, başka bir kutuya dokunup bırak. Dört aynı renk kediyle dolan kutu, \"MEOW\" bandıyla kapanır. 500 bölümün her biri çözücüyle denetlendi; hepsi çözülebilir.",
+    e1:"Kolay · klasik",e2:"Orta · iki renkli kediler",e3:"Zor · daha sıkışık tahtalar",e4:"Çok zor · renkler aynı tarafta eşleşir",e5:"Aşırı · karanlıkta, tek can",priv:"Gizlilik politikası",more:"Creacet'in diğer işleri"};
+  const en={};document.querySelectorAll('[data-i]').forEach(e=>en[e.dataset.i]=e.textContent);
+  const btn=document.getElementById('lang');let cur='en';
+  const set=l=>{cur=l;const d=l==='tr'?tr:en;document.querySelectorAll('[data-i]').forEach(e=>{if(d[e.dataset.i])e.textContent=d[e.dataset.i]});document.documentElement.lang=l;btn.textContent=l==='tr'?'English':'Türkçe';try{localStorage.setItem('css-lang',l)}catch(_){}}
+  let saved=null;try{saved=localStorage.getItem('css-lang')}catch(_){}
+  set(saved||((navigator.language||'').toLowerCase().startsWith('tr')?'tr':'en'));
+  btn.onclick=()=>set(cur==='tr'?'en':'tr');
+})();
+</script>
+</body>
+</html>
