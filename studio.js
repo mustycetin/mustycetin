@@ -58,7 +58,6 @@ window.addEventListener('pointerdown', event => {
   if (event.pointerType !== 'touch' || reduced.matches) return;
   const host = event.target.closest('.portfolio-card,.app-detail,.feature,.pitch');
   if (!host) return;
-  host.style.position = 'relative';
   host.append(mascot);
   mascot.animate([{scale:'.75',rotate:'-12deg'},{scale:'1.15',rotate:'10deg'},{scale:'1'}],{duration:360});
 }, {passive:true});
