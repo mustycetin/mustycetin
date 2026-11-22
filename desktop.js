@@ -50,3 +50,12 @@ window.addEventListener('scroll',scheduleCamera,{passive:true});
 new ResizeObserver(scheduleCamera).observe(stage);
 motion.addEventListener('change',configureCamera);
 configureCamera();
+
+const biography = document.querySelector('#bio-window');
+for (const paragraph of document.querySelectorAll('#about p')) {
+  biography.querySelector('.bio-copy').append(paragraph.cloneNode(true));
+}
+document.querySelector('#open-bio').addEventListener('click', event => {
+  event.preventDefault();
+  biography.showModal();
+});
