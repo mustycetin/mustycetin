@@ -45,3 +45,14 @@ window.addEventListener('pointerdown', event => {
   host.append(mascot);
   mascot.animate([{scale:'.75',rotate:'-12deg'},{scale:'1.15',rotate:'10deg'},{scale:'1'}],{duration:360});
 }, {passive:true});
+const studioWindow = document.querySelector('.studio-window');
+function updateWindow() {
+  const now = new Date();
+  const hour = now.getHours() + now.getMinutes() / 60;
+  studioWindow.dataset.period = hour < 6 || hour >= 21 ? 'night' : hour < 10 ? 'morning' : hour < 17 ? 'day' : 'evening';
+  const arc = Math.cos((hour - 13) * Math.PI / 15);
+  studioWindow.style.setProperty('--altitude', (22 - 12 * arc) + '%');
+}
+updateWindow();
+setInterval(updateWindow, 60000);
+document.addEventListener('visibilitychange', () => { if (!document.hidden) updateWindow(); });

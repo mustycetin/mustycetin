@@ -30,3 +30,14 @@ body{background:#121114;color:var(--paper)}
 @media(max-width:620px){.spotlight{grid-template-columns:1fr}.feature{aspect-ratio:1.85}.portfolio-grid{grid-template-columns:1fr}.tile-art{height:auto;aspect-ratio:2.1}.portfolio-card{min-height:0}.shot,.reel{flex-basis:min(54vw,210px)}.links>a:first-child{display:inline}.links{gap:12px}.navsupport{padding:8px 12px}}
 @media(pointer:coarse){#mascot{position:absolute;left:auto;right:0;top:0;transform:rotate(8deg)}.pitch{position:relative;padding-right:12px}}
 @media(prefers-reduced-motion:reduce){#mascot{display:none}}
+.studio-window{--sky:#111930;--horizon:#68648b;--light:#f9eac7;position:relative;isolation:isolate;overflow:hidden;padding:clamp(24px,3vw,48px);border:6px solid #383437;border-radius:64px 64px 18px 18px;box-shadow:0 5px 0 #655c58,inset 0 0 0 1px #ffffff38}
+.studio-window[data-period="morning"]{--sky:#799bb6;--horizon:#ffc396;--light:#fff1b0}
+.studio-window[data-period="day"]{--sky:#457ea9;--horizon:#a2dada;--light:#fff5ca}
+.studio-window[data-period="evening"]{--sky:#61537b;--horizon:#f09365;--light:#ffd585}
+.view{position:absolute;inset:0;z-index:-1;overflow:hidden;background:linear-gradient(160deg,var(--sky) 12%,var(--horizon))}
+.orb{position:absolute;right:9%;top:var(--altitude,14%);width:12%;aspect-ratio:1;border-radius:50%;background:var(--light);box-shadow:0 0 32px #fff3}
+.studio-window[data-period="night"] .orb{background:transparent;box-shadow:inset -12px -5px var(--light)}
+.ridge{position:absolute;inset:35% -6% 0;background:#384451;clip-path:polygon(0 53%,18% 30%,32% 44%,49% 22%,62% 38%,82% 11%,100% 35%,100% 100%,0 100%)}
+.ridge.near{inset:52% -10% 0;background:#242930;transform:scaleX(-1)}
+.view:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#11131de0,#15152275 65%,transparent)}
+.window-copy h1{font-size:clamp(2.65rem,5.5vw,5.5rem);color:white}.window-copy h1 i{color:#ffe4bf}.window-copy p{color:white}.window-copy .kicker{color:#fff}
